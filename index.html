@@ -4,9 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Atividade Integradora</title>
+    <style type="text/css">
+        /*Bloco = Banner */
+        .banner{
+            background-color: greenyellow;
+        }
+        .banner__corpo{
+            margin: 0 auto;
+            max-width: 80%;
+        }
+         /*Elemento = Texto */
+        .banner__texto{
+            font-family: 'Arial black', Arial, sans-serif;
+        }     
+         /*Elemento = botao */
+        .banner__botao{
+            border: 1px solid black;
+            border-radius: 25px;
+            color: black;
+            font-family: Arial, sans-serif;
+            padding: 5px 15px;
+            text-decoration: none;
+        }   
+        .banner__texto, .banner__botao{
+            display: inline-block;
+        }
+          /*Modificador = Desabilitado */
+        .banner__botao--desabilitado{
+            border: 1px solid gray;
+            color: gray;
+        }
+    </style>
 </head>
 <body>
-    
+         <!-- BEM "Bloco, Elemento, Modificador" CSS -->
+         <!-- B "Bloco" = Banner -->
+         <main class="banner">
+              <!-- E "Elemento" = Corpo -->
+            <article class="banner__corpo">
+                <h1 class="banner__texto">baixe o e-book Culturas de Periferia |</h1>
+                 <!-- M "Modificador" = Desabilitado -->
+                 <!-- Classes são separadas por espaço -->
+                <a class="banner__botao banner__botao--desabilitado" href=""> faça o download ebook</a>
+            </article>
+        </main>
+
 </body>
 </html>
